@@ -1,6 +1,20 @@
 = dynamic_errors
 
-Description goes here.
+This gem wraps the standard Rails 3 error pages (public/(404|422|500).html) with the applications layout. Any further changes to the application layout will be reflected on the error pages, preventing having to make layout changes in three places.
+
+== Installation
+gem install dynamic_errors
+
+== Usage
+add "require 'dynamic_errors'" to environment.rb
+
+Create the following views if you wish to override the standard error message
+errors/404.html.erb
+errors/422.html.erb
+errors/500.html.erb
+
+== Compatibility
+Currently the gem has only been tested (very briefly at that) with Rails -v3.0.3-7. Rails 2.x may be added if requested.
 
 == Contributing to dynamic_errors
  
