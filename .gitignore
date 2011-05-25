@@ -1,3 +1,8 @@
+.gitignore
+.project
+.loadpath
+.document
+
 # rcov generated
 coverage
 
