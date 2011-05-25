@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "dynamic_errors"
   gem.homepage = "http://github.com/kwbock/dynamic_errors"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Adds dynamic error pages to Rails}
+  gem.description = %Q{A gem to allow dynamic error pages in Rails}
   gem.email = "kylewbock@gmail.com"
   gem.authors = ["Kyle Bock"]
   # dependencies defined in Gemfile

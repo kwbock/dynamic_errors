@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dynamic_errors}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kyle Bock"]
@@ -17,17 +17,19 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/dynamic_errors.rb",
-    "lib/dynamic_errors/engine.rb",
-    "app/views/errors/500.html.erb",
     "app/views/errors/404.html.erb",
     "app/views/errors/422.html.erb",
+    "app/views/errors/500.html.erb",
+    "dynamic_errors-0.1.0.gem",
+    "dynamic_errors.gemspec",
+    "lib/dynamic_errors.rb",
+    "lib/dynamic_errors/engine.rb",
     "test/helper.rb",
     "test/test_dynamic_errors.rb"
   ]
@@ -42,17 +44,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rails>, [">= 3.0.3"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.0"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
+      s.add_dependency(%q<rails>, [">= 3.0.3"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
       s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
+    s.add_dependency(%q<rails>, [">= 3.0.3"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
