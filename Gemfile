@@ -12,4 +12,4 @@ group :development do
   gem "rcov", ">= 0"
 end
 
-gem 'rails', '>=3.0.3'
+gem 'rails', '>=2.3.5'
