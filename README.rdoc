@@ -1,5 +1,7 @@
 = dynamic_errors
 
+Currently this gem is fairly broken. We are working on updating it to work with the latest minor version of Rails (at the time of this post, 3.2.x). Thank you for your patience.
+
 This gem wraps the standard Rails 3 error pages (public/(404|422|500).html) with the applications layout. Any further changes to the application layout will be reflected on the error pages, preventing having to make layout changes in three places.
 
 == Installation
